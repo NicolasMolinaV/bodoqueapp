@@ -1,0 +1,50 @@
+<ion-content [fullscreen]="true" class="custom-content">
+
+  <div class="image-container">
+    <img src="assets/imagenes/bodoque-serio.png" alt="Imagen superior" class="top-image" />
+  </div>
+  
+  <ion-card class="custom-card">
+    <ion-card-content>
+      <div style="text-align: center; margin-bottom: 20px;">
+        <b style="color: black; font-size: 18px;">Registrarse</b>
+      </div>
+
+      <div>
+        <ion-item lines="none" class="custom-item">
+          <ion-input #usuarioInput [(ngModel)]="user.usuario" placeholder="Usuario" class="custom-input">
+          </ion-input>
+        </ion-item>
+      </div>
+
+      <div style="margin-top: 30px;">
+        <ion-item lines="none" class="custom-item">
+          <ion-input #emailInput type="email" [(ngModel)]="user.email" placeholder="Email" class="custom-input">
+          </ion-input>
+        </ion-item>
+      </div>
+
+      <div style="margin-top: 30px;">
+        <ion-item lines="none" class="custom-item">
+          <ion-input #passwordInput type="password" [(ngModel)]="user.password" placeholder="****"
+            class="custom-input custom-password-input"> 
+          </ion-input>
+        </ion-item>
+      </div>
+
+      <div style="margin-top: 30px;">
+        <ion-item lines="none" class="custom-item">
+          <ion-input #confirmPasswordInput type="password" [(ngModel)]="user.confirmPassword"
+            placeholder="Confirmar Contraseña" class="custom-input custom-confirm-password-input">
+          </ion-input>
+        </ion-item>
+      </div>
+
+      <p style="margin-top: 20px; margin-left: 20px; color: red;" [routerLink]="['/login']" >Iniciar Sesión</p>
+
+      <div style="margin-top: 30px; text-align: center;">
+        <ion-button (click)="onClick()" class="custom-button" expand="block">Entrar</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

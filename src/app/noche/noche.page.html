@@ -1,0 +1,72 @@
+<ion-content [fullscreen]="true">
+
+
+
+
+  <div style="display: flex; align-items: center; margin-left: 20px; margin-top: 30px;">
+    <h1 #animatedHeader class="animated-header" style="margin-right: 10px; font-size: 32px;">Noche</h1>
+    <p style="color: white; opacity: 60%; margin-left: 160px; margin-top: 20px; font-size: 12px;">Wifi:Huawei-2.4G</p>
+  </div>
+
+
+
+  <div id="main-content" class="ion-padding">
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0px; justify-items: center; margin-top: 10px;">
+      <ion-card class="black-card" style="width: 169px; height: 198px; color: #393535; border-radius: 24px; position: relative; z-index: 1;"> 
+        <ion-card-header style="display: flex; justify-content: center; align-items: center;">
+        </ion-card-header>
+        <ion-img src="assets/imagenes/notificacion.png" style="width: 60px; height: 60px; display: block; margin: 0 auto;"></ion-img>
+        <hr style="border: none; border-top: 0.25px solid #393535; width: 129px; position: relative; top: 20px;" />
+
+        <ion-toggle class="custom-toggle">Notificaciones</ion-toggle><br /><br />
+
+      </ion-card>
+      
+
+
+      <ion-card class="black-card" style="width: 169px; height: 198px; color: #393535; border-radius: 24px; position: relative; z-index: 1;"> 
+        <ion-card-header style="display: flex; justify-content: center; align-items: center;">
+        </ion-card-header>
+        <ion-img src="assets/imagenes/alerta.png" style="width: 60px; height: 60px; display: block; margin: 0 auto;"></ion-img>
+        <hr style="border: none; border-top: 0.25px solid #393535; width: 129px; position: relative; top: 20px;" />
+
+        <ion-toggle class="custom-toggle">Alertas</ion-toggle><br /><br />      
+      </ion-card>
+    
+      <ion-card class="black-card" style="width: 169px; height: 198px; color: #393535; border-radius: 24px; position: relative; z-index: 1;"> 
+        <ion-card-header style="display: flex; justify-content: center; align-items: center;">
+        </ion-card-header>
+        <ion-img src="assets/imagenes/recomendaciones.png" style="width: 60px; height: 60px; display: block; margin: 0 auto;"></ion-img>
+        <hr style="border: none; border-top: 0.25px solid #393535; width: 129px; position: relative; top: 20px;" />
+
+        <ion-toggle class="custom-toggle">Recomenda.</ion-toggle><br /><br />      
+      </ion-card>
+    </div>   
+    
+  </div>
+
+
+
+
+  <footer style="position: fixed; bottom: 0; left: 0; width: 100%; z-index: 10;">
+    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+      <ion-button class="custom-button" expand="block" style="width: 350px; height: 63px; --background: #DC2011; color: white;">Guardar</ion-button>
+    </div>
+    
+    <ion-tab-bar slot="bottom" style="border: 0;">
+      <ion-tab-button tab="home" [routerLink]="['/home']">
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="radio" [routerLink]="['/buscar']">
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="library" [routerLink]="['/escenarios']">
+        <ion-icon style="color: #FFB267;" name="apps-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="search" [routerLink]="['/perfil']">
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </footer>
+
+</ion-content>

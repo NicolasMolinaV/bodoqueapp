@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <div style="display: flex; align-items: center; margin-left: 20px; margin-top: 30px;">
+    <h1 #animatedHeader class="animated-header" style="margin-right: 10px; font-size: 32px;">Buscar</h1>
+    <p style="color: white; opacity: 60%; margin-left: 160px; margin-top: 20px; font-size: 12px;">Wifi:Huawei-2.4G</p>
+  </div>
+
+  <p style="color: white; opacity: 60%; margin-left: 20px; margin-top: 0%; font-size: 17px;">1 nuevo dispositivo</p>
+
+  <footer style="position: fixed; bottom: 0; left: 0; width: 100%; z-index: 10;">
+    <ion-tab-bar slot="bottom" style="border: 0;">
+      <ion-tab-button tab="home" [routerLink]="['/home']">
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="radio" [routerLink]="['/buscar']">
+        <ion-icon style="color: #FFB267;" name="search-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="library" [routerLink]="['/escenarios']">
+        <ion-icon name="apps-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="search" [routerLink]="['/perfil']">
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </footer>
+</ion-content>
